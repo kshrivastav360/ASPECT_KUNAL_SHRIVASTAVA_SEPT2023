@@ -1,12 +1,19 @@
 #include <stdio.h>
-int main(){
-	int n,product;
-	printf("Enter no :");
-	scanf("%d",&n);
-	product = 1;
-	for (int i=1;i<=n;i++){
-		product = product * i;
-	}
-	printf("the factorial is :%d",product);
-	return 0;
+
+int main() {
+    int arr[7] = {1, 2, 3, 4, 5, 6, 7};
+
+    for (int i = 0; i < 7; i++) {
+        int num = arr[i];
+        int fact = 1;
+
+        for (int j = 1; j <= num; j++) {
+            fact *= j;
+        }
+
+        printf("Factorial of %d is: %d\n", num, fact);
+    }
+
+    return 0;
 }
+
